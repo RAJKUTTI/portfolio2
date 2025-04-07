@@ -1,0 +1,31 @@
+.dot {
+    position: absolute;
+    width: fit-content;
+    background: linear-gradient(135deg, #3fd70c, #84c666 48%, #326226);
+    border-radius: 40px;
+    width: 10px;
+    height: 10px;
+    margin-top: -5px;
+    margin-left: -5px;
+  }
+  
+  .effect {
+    position: absolute;
+    width: fit-content;
+    background-color: #12e60f;
+    border-radius: 40px;
+    width: 10px;
+    height: 10px;
+    opacity: 0.75;
+    margin-top: -5px;
+    margin-left: -5px;
+    animation: ping 1s cubic-bezier(0, 0, 0.2, 1) infinite;
+  }
+  
+  @keyframes ping {
+    75%,
+    100% {
+      transform: scale(2);
+      opacity: 0;
+    }
+  }

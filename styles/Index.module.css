@@ -1,0 +1,19 @@
+/* .pageWrapper {
+    position: relative;
+    overflow: hidden;
+  }
+  
+  .pageWrapper::before {
+    content: '';
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 12vh;
+    background: rgba(32, 32, 32, 0.5); 
+    filter: blur(10px); 
+    z-index: 10; 
+    pointer-events: none;
+  }
+
+   */

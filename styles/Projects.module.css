@@ -1,0 +1,148 @@
+/* ProjectCards.module.css */
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 10px;
+    display: flex;
+    flex-wrap: wrap; 
+    justify-content: center; 
+    gap: 15px; 
+    margin-top: 2%;
+    text-align: left;
+}
+  
+  .card {
+    
+    background-color: #252424;
+    color: #d5d5d5;
+    padding: 20px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 30%; /* Ensure cards fit within the container */
+    box-sizing: border-box; /* Include padding and border in element's total width and height */  
+}
+  .card:hover{
+    background-color: #010101;
+    transition: background-color 0.7s ease;
+  }
+  .card img {
+    border-radius: 10px;
+    width: 100%; /* Ensure image takes full width of the card */
+    height: 300px; /* Set a fixed height for the images */
+    
+  }
+  
+  .card h2 {
+    font-size: 24px;
+    margin-top: 15px;
+    font-weight: 100;
+    width: 85%;
+  }
+  
+  .card p {
+    margin-bottom: 10px;
+  }
+  
+  .card .technologies {
+    color: #a5a5a5;
+    font-size: 14px;
+  }
+  
+
+  .tools{
+  background-color: #4b4b4b;
+  padding: 10px;
+  width: 50%;
+  text-align: center;
+  font-size: 14px;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  
+  }
+ 
+
+  
+  .toolscontainer {
+    display: flex;
+    gap: 5px;
+    row-gap: 0px;
+    flex-wrap: wrap;
+    justify-content: left;
+    width: 70%;
+  }
+  
+  .tools {
+    background-color: #333;
+    color: #989797;
+    padding: 10px 12px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    width: fit-content;
+  }
+  
+  .arrowContainer {
+    margin-top: 20px;
+    margin-left: 85%;
+    margin-bottom: -40px;
+    display: flex;
+    flex-wrap: wrap;
+  }
+  
+  .arrowButton {
+    background-color: #00c8ff;
+    color: #000;
+    padding: 8px 12px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 20px;
+  }
+  .title {
+    display: flex;
+    justify-content: left;
+    font-size: 35px;
+    color: #fff;
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 20px; 
+    text-align: left;
+  }
+
+  @media (max-width: 768px) {
+    .card {
+      width: 89%; /* Adjust width for tablets and small desktops */
+    }
+    .title{
+        font-size: 25px;
+        display: flex;
+        margin-left: 8%;
+      }
+}
+  
+  
+  @media (max-width: 480px) {
+    .card {
+      width: 100%; 
+    }
+  
+    .arrowContainer {
+      margin-left: 80%; /* Adjust arrow button position */
+    }  
+}
+
+@media only screen and (min-device-width: 481px) and (max-device-width: 1024px) and (orientation: landscape) {
+ .card{
+  width: 40%;
+ }
+ .container{
+  display: flex;
+  flex-direction: row;
+  margin-bottom: 10%;
+ }
+}

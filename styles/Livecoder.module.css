@@ -1,0 +1,35 @@
+/* styles/Home.module.css */
+
+.container {
+  padding: 20px;
+  background-color: #1e1e1e;
+  color: #fff;
+  margin: 8vh auto;
+  max-width: 1100px;
+}
+
+.editor {
+  font-size: 18px;
+  margin-bottom: 20px;
+  background-color: #1e1e1e;
+}
+
+.button {
+  margin-bottom: 20px;
+  padding: 10px;
+  background-color: #00a6f3;
+  color: #000000;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+.output {
+  padding: 10px;
+  background-color: #282828;
+  border-radius: 10px;
+}
+
+.outputContainer {
+  margin-top: 20px;
+}

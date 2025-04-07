@@ -1,0 +1,200 @@
+.container {
+  color: #fff;
+  padding: 12vh 5vw;
+  display: flex;
+  justify-content: space-between;
+  position: relative;
+  margin-top: -4%;
+  width: 90%;
+  max-width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+  overflow-x: hidden;
+}
+
+
+.callToAction {
+  display: flex;
+  flex-direction: column;
+}
+
+.title {
+  margin-left: -10%; /* Centers the title */
+  padding: 0 10px;
+  font-size: 60px; /* Fixed font size */
+  font-weight: 500;
+  width: 500px; /* Fixed width */
+  max-width: 500px; /* Prevents shrinking */
+  text-align: left; /* Ensures text is always centered */
+  position: relative;
+}
+
+
+
+.button {
+  background-color: #13bff8;
+  color: #000;
+  padding: 15px 10px;
+  width: 18%;
+  min-width: 120px;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  margin-top: 20px;
+  text-align: center;
+  margin-left: -8%;
+}
+
+.arrow {
+  margin-top: -10px;
+  margin-bottom: -7px;
+}
+
+.nav {
+  display: flex;
+  flex-direction: row;
+  gap: 50px; /* Fixed gap to prevent excessive widening */
+  line-height: 30px;
+  margin-right: auto;
+  margin-left: 0%;
+  justify-content: flex-end;
+  width: 100%;
+  max-width: 500px; /* Ensures it does not grow beyond this width */
+  flex-wrap: wrap; /* Prevents breaking layout */
+}
+
+
+.heading {
+  font-size: 17px;
+  text-align: left;
+}
+
+.navSection {
+  margin-bottom: 20px;
+  margin-top: 20px;
+  text-align: right;
+ 
+}
+
+.navList {
+  list-style-type: none;
+  padding: 0;
+}
+
+.navItem {
+  color: #b4b4b4;
+  text-decoration: none;
+  font-size: 14px; 
+  display: flex;
+  text-align: left;
+}
+
+.navItem:hover {
+  color: #fff;
+}
+
+.logo {
+  margin-left: auto;
+}
+
+@media (max-width: 768px) {
+  .container {
+      flex-direction: column;
+      align-items: center;
+      margin-top: 5%;
+      padding: 10vh 5vw;
+      width: 90%;
+      text-align: center;
+  }
+
+  .nav {
+      flex-direction: row;
+      justify-content: left;
+      gap: 10vw;
+  }
+
+  .title {
+      text-align: left;
+      font-size: 50px;
+      width: 100%;
+  }
+
+  .button {
+      width: auto;
+      min-width: 140px;
+      padding: 14px 10px;
+      margin: 20px auto 0;
+      margin-left: -20px;
+  }
+
+  .navSection {
+      margin-top: 10%;
+      text-align: center;
+  }
+  .callToAction{
+    margin-right: 20px;
+  }
+}
+
+
+@media (max-width: 376px) {
+  .container {
+      flex-direction: column;
+      align-items: center;
+      margin-top: -10%;
+      padding: 5vh 4vw;
+      width: 100%;
+  }
+
+  .title {
+      font-size: 30px;
+      text-align: left;
+      margin-left: 10px;
+  }
+
+  .button {
+      width: 30%;
+      min-width: 130px;
+      margin: 20px auto 10;
+      text-align: center;
+      justify-content: left;
+      margin-left: 20px;
+  }
+
+  .nav {
+      flex-direction: row;
+      gap: 1.5rem;
+      width: 100%;
+      align-items: left;
+      margin-left: 30px;
+  }
+
+  .navSection {
+      margin-top: 10%;
+      text-align: center;
+  }
+  
+}
+
+
+@media only screen and (min-device-width: 481px) and (max-device-width: 1024px) and (orientation: landscape) {
+  .container {
+      margin-top: 10%;
+      padding: 5vh 4vw;
+      width: 90%;
+  }
+
+  .navSection {
+      margin-top: 10%;
+      text-align: center;
+      margin-right: 30%;
+  }
+
+  .nav {
+      justify-content: space-evenly;
+      gap: 5vw;
+  }
+  .button{
+    margin-left: -40px;
+  }
+}
